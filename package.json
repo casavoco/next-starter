@@ -1,0 +1,61 @@
+{
+  "name": "next-starter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "tdd": "jest --watch",
+    "start": "next start",
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "test": "jest"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "prettier": {
+    "semi": false,
+    "printWidth": 110
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && pretty-quick --staged && jest"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "@emotion/core": "10.0.34",
+    "@emotion/styled": "10.0.27",
+    "next": "9.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@emotion/babel-preset-css-prop": "10.0.27",
+    "@testing-library/jest-dom": "5.11.3",
+    "@testing-library/react": "10.4.8",
+    "@types/node": "14.0.27",
+    "@types/react": "16.9.46",
+    "@typescript-eslint/eslint-plugin": "3.9.0",
+    "@typescript-eslint/parser": "3.9.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.6.0",
+    "eslint-config-react-app": "5.2.1",
+    "eslint-plugin-flowtype": "5.2.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest": "23.20.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.20.6",
+    "eslint-plugin-react-hooks": "4.0.8",
+    "husky": "4.2.5",
+    "jest": "26.4.0",
+    "lint-staged": "10.2.11",
+    "prettier": "2.0.5",
+    "pretty-quick": "2.0.1",
+    "typescript": "3.9.7"
+  }
+}
