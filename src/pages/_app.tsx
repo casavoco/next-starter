@@ -1,10 +1,11 @@
-import { AppProps } from "next/app"
+import { NextComponentType } from "next"
+import { AppContext, AppInitialProps, AppProps } from "next/app"
 import Head from "next/head"
-import "styles/font.css"
-import "styles/global.css"
-import "styles/reset.css"
+import "@app/styles/font.css"
+import "@app/styles/global.css"
+import "@app/styles/reset.css"
 
-const CustomApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+const CustomApp: NextComponentType<AppContext, AppInitialProps, AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
