@@ -9,6 +9,15 @@ module.exports = {
     "import/no-anonymous-default-export": "error",
     "import/no-webpack-loader-syntax": "off",
     "react/react-in-jsx-scope": "off",
+    "react/jsx-sort-props": [
+      "error",
+      {
+        callbacksLast: true,
+        shorthandFirst: true,
+        ignoreCase: true,
+        reservedFirst: true,
+      },
+    ],
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/click-events-have-key-events": "off",
