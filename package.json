@@ -13,10 +13,6 @@
   "browserslist": [
     "defaults"
   ],
-  "prettier": {
-    "semi": false,
-    "printWidth": 110
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged && pretty-quick --staged && jest"
